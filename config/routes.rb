@@ -1,5 +1,5 @@
-Rails.application.routes.draw do
-  get 'pages/index'
+Rails.application.rou
+  root to: 'pages#index'
 
   resources :users, only: [:new, :create]
   delete '/logout', to: 'sessions#destroy', as: :logout
